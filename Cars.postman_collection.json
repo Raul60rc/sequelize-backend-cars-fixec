@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "d81475cd-6f2d-4802-9e65-c41a47e2a21d",
+		"name": "Cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24860245"
+	},
+	"item": [
+		{
+			"name": "GET ALL CARS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/cars/allCars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"allCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL RATING CARS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/car-ratings/allRatings",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car-ratings",
+						"allRatings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/users/allUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"allUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Raul\",\n    \"email\": \"raul@gmail.com\",\n    \"password\": \"raulPassword\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/users/createUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD CAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"make\": \"Mercedes\",\n    \"model\": \"220A\",\n    \"price\": 29999.99,\n    \"fuel\": \"gasoline\",\n    \"year\": 2023,\n    \"kms\": 10000,\n    \"door\": 4,\n    \"shift\": \"DSG\",\n    \"color\": \"black\",\n    \"is_professional\": true,\n    \"province\": \"Madrid\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/cars/addCar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"addCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD RATING CARS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"car_id\": 1,\n    \"user_id\": 1,\n    \"rating\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/car-ratings/addRating",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car-ratings",
+						"addRating"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
